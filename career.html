@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <!-- Latest compiled and minified CSS -->
+		
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+		<link rel="stylesheet" href=".\css\style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href=".\css\form.css" >
+		<script type="text/javascript" src=".\JS\main.js"></script>
+      
+    </head>
+    <body >
+			<div class="header-group">
+	
+	<div class="bottom-section-header">
+	<div class="page-center">
+		<div class="logo">
+			<a href="#"><img src=".\images\SHILPEX_LOGO.png" alt="Shilpex"></a>
+		</div>
+		<div class="custom-menu-section">
+			<div class="custom-menu-primary">
+				<ul>
+				<li>
+					<a href="Index.html">Home</a>
+				</li>
+				<li class="hs-menu-item">
+					<a href="about.html">About Us</a>
+					<ul class="hs-menu-children-wrapper">
+						<li>
+						<a href="#mission">Mission</a>
+						</li>
+						<li>
+						<a href="#vision">Vision</a>
+						</li>
+						<li>
+						<a href="#values">Values</a>
+						</li>
+						<li>
+						<a href="#our-network">Our Network</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="our-brands.html">Our Brands</a>
+					
+				</li>
+				<li>
+					<a href="career.html">Career</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact Us</a>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<div class="banner-section contact-page">
+ <div class="page-center">
+	<div class="inner">
+		<h1>
+			Career
+		</h1>
+	</div>
+ </div>
+</div>
+	<div class="body-container hs-contact-page">
+	<div class="top-section">
+	<div class="page-center clearfix">
+        <div class="inner">
+            <!-- Form Started -->
+            <div class="inner form-top">
+			
+                <div class="row-inner">
+                    <div class="col-section">
+                        <div class="panel panel-danger">
+                            <div class="panel-body">
+                                <div class="form-signup" id="singup">
+									<form action="mailto:myforms@mydomain.com" method="get" onsubmit="return singup()">
+									  <label for="firstname">First Name: <input type="text" class="fname form-control" name="firstname" placeholder="Enter First Name"></label><br>
+									  <label for="lastname">Last Name: <input type="text" class="lname form-control" name="lastname" placeholder="Enter Last Name"></label><br>
+									  <label for="email">Email: <input type="email" class="email form-control" name="email" placeholder="Enter Email Address"></label><br>
+									 
+									  <label for="query">Message: <textarea name="query" class="query form-control" rows="5" cols="15"></textarea></label>
+									  <p class="emsgb"></p>
+									  <div class="form-group hs-action">
+									  <input type="submit" class="btn-danger btn" name="submit" value="Submit">
+									  </div>
+									</form>
+								  </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<script>
+								function tc(a){
+  var x = document.querySelector(a).value;
+  return x;
+}
+function msg(a){
+  var x = document.querySelector(".emsg").innerHTML=a;
+  return x;
+}
+function msgb(a){
+  var x = document.querySelector(".emsgb").innerHTML=a;
+  return x;
+}
+function size(a){
+  var x = document.querySelector(a).value.length;
+  return x;
+}
+// show hide function
+//var idhide=document.getElementById("singup");
+function singu() {
+  var hide=document.querySelector(".form-login");
+
+  if (hide.classList[1]=="hidden") {
+    hide.classList.toggle("visible");
+  }else {
+    hide.classList.toggle("hidden");
+  }
+  console.log(hide.classList);
+  return hide;
+}
+// Sing up
+function singup(){
+  if (tc(".fname")==null || tc(".fname")=="") {
+    msgb("Please Enter First name");
+    return false;
+  }
+  if (tc(".lname")==null || tc(".lname")=="") {
+    msgb("Please Enter Last name");
+    return false;
+  }
+  if (tc(".email")==null || tc(".email")=="") {
+    msgb("Please Enter Email");
+    return false;
+  }
+  if (tc(".pwd")==null || tc(".pwd")=="") {
+    msgb("Please Enter Password");
+    return false;
+  }
+  if (tc(".pwd")!=tc(".conpwd")) {
+    msgb("Password Miss match");
+    return false;
+  }
+  if (size(".pwd") <= 10) {
+    msgb("Minimum Password length 10");
+    return false;
+  }
+}
+
+								</script>
+            <!-- Form Ended -->
+        </div>
+		 </div>
+		 </div>
+		 
+            </div>
+			<!-- Footer-->
+			<div class="custom-footer-group">
+<div class=" custom-footer-top-group">
+	<div class="page-center">
+		<div class="col1 col">
+			<h4>About Us</h4>
+			<p>Shilpex pharmysis ensures quality medicines and enriches lives. Provides medicines for all the diseases , specialized in Respiratory , Cardiology , Diabetic, Dermatology, Gastroentrology, Gynecology and many more.</p>
+		</div>
+		<div class="col2 col">
+		<h4>Quick Links</h4>
+		<ul>
+			<li><a href="about.html"> About Us </a></li>
+			<li><a href="our-brands.html"> Our Brands </a></li>
+			<li><a href="career.html"> Career </a></li>
+			<li><a href="contact.html"> Contact us </a></li>
+			</ul>
+		</div>
+		
+		<div class="col4 col">
+		<h4>
+    Get In Touch
+  </h4>
+  <div class="custom-footer-social-icon">
+  <div class="fl-icon-wrap">
+    <span class="fl-icon">
+      <a href="tel:(202)%20921-3612" >
+        <i class="fas fa-phone"></i>
+      </a>
+    </span>
+    <div class="fl-icon-text">
+      <a href="tel:(202)%20921-3612" class="fl-icon-text-link fl-icon-text-wrap">
+        <p>+91 8076895334</p>						</a>
+    </div>
+  </div>
+  
+  <div class="fl-icon-wrap">
+    <span class="fl-icon">
+      <a href="mailto:Info@oncallstaffingsolutions.com" >
+        <i class="far fa-envelope"></i>
+      </a>
+    </span>
+    <div class="fl-icon-text">
+      <a href="www.shilpex.com">
+        <p>www.shilpex.com</p>						</a>
+    </div>
+  </div>
+  <div class="fl-icon-wrap">
+    <span class="fl-icon">
+      <i class="far fa-map"></i>
+    </span>
+    <div class="fl-icon-text fl-icon-text-wrap">
+      <p>A-1, Ground floor, Functional Industrial Estate (F.I.E), Patparganj-110092</p>		
+    </div>
+  </div>
+</div>
+		</div>
+	</div>
+</div>
+<div class="custom-footer-copyright">
+<div class="page-center">
+<p>Copyright © 2017 Shilpex. All Rights Reserved.</p>
+</div>
+</div>
+</div>
+    </body>
+</html>
