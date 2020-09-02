@@ -16,8 +16,12 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href=".\css\form.css" >
 		<script type="text/javascript" src=".\JS\main.js"></script>
-		<script type="text/javascript" src=".\JS\form.js"></script>
-      
+		<style>
+		.form-signup .btn-danger{
+		width:auto !important;
+		margin:33px auto 20px!important;
+		}
+		</style>
     </head>
     <body >
 			<div class="header-group">
@@ -87,27 +91,19 @@
                         <div class="panel panel-danger">
                             <div class="panel-body">
                                 <div class="form-signup" id="singup">
-									<form method="post" name="contact_form" action="handler.php" id="reused_form">
-									  <label for="firstname">First Name: <input type="text" class="fname form-control" name="firstname" placeholder="Enter First Name"></label><br>
+									<form action="mail_handler.php" method="post" name="form" class="form-box">
+									  <label for="firstname">First Name: <input type="text" class="fname form-control" name="name" placeholder="Enter First Name"></label><br>
 									  <label for="lastname">Last Name: <input type="text" class="lname form-control" name="lastname" placeholder="Enter Last Name"></label><br>
 									  <label for="email">Email: <input type="email" class="email form-control" name="email" placeholder="Enter Email Address"></label><br>
 									 
 									  <label for="query">Query: <textarea name="query" class="query form-control" rows="5" cols="15"></textarea></label>
-									  <p class="emsgb"></p>
+									  
 									  <div class="form-group hs-action">
-									  <button class="btn btn-raised btn-block btn-danger">Submit</button>
+									  <input type="submit" value="Submit" class="btn btn-raised btn-block btn-danger" name="submit">
 									  </div>
 									</form>
-									<div id="error_message" style="width:100%; height:100%; display:none; ">
-                                    <h4>
-                                        Error
-                                    </h4>
-                                    Sorry there was an error sending your form. 
-                                </div>
-                                <div id="success_message" style="width:100%; height:100%; display:none; ">
-<h2>Success! Your Message was Sent Successfully.</h2>
-</div>
-								  </div>
+									
+                               
                                 
                             </div>
                         </div>
@@ -186,11 +182,5 @@
 </div>
 </div>
 </div>
-
-<script language=”javascript”>
-
-var frmvalidator = new Validator(“contactform”); frmvalidator.addValidation(“name”,”req”,”Please provide your name”); frmvalidator.addValidation(“email”,”req”,”Please provide your email”); frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”); 
-
-</script>
     </body>
 </html>
