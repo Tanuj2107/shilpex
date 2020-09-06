@@ -5,7 +5,7 @@
 		$email=$_POST['email'];
 		$msg=$_POST['query'];
 		
-		$to='tanujbajaj2191@gmail.com';
+		$to='sakshiadhikari@gmail.com';
 		$subject='Form Submission';
 		$message="Name: ".$name."\n"."Last name: ".$lastname."\n"."Email: ".$email."\n". "Wrote the following: "."\n\n".$msg;
 		$headers="From: ".$email;
