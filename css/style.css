@@ -814,11 +814,7 @@ div#singup .form-control::placeholder {
 		cursor: pointer;
 	}
 	.custom-footer-top-group .col.col2 {
-    		padding-left: 0px;
-	}
-	.hs-about-page .section .row {
-	    display: block;
-	    align-items: center;
+    padding-left: 0px;
 	}
 	.mobile-trigger:after {
 		content: '';
@@ -833,9 +829,6 @@ div#singup .form-control::placeholder {
 	.custom-menu-section {
 		width: 100%;
 		display: none;
-	}
-	.hs-about-page .section .row .col-md-6 {
-	    margin-bottom: 30px;
 	}
 	.custom-menu-primary > ul {
 		display: block;
